@@ -1,0 +1,13 @@
+header {
+  background-color: lightyellow;
+  height: 120px;
+}
+
+main li {
+  height: 120px;
+  background-color: salmon;
+}
+
+img {
+  align-content: center;
+}
