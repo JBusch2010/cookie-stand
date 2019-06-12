@@ -3,11 +3,15 @@ header {
   height: 120px;
 }
 
-main li {
-  height: 120px;
-  background-color: salmon;
-}
-
 img {
   align-content: center;
+}
+
+li {
+  float: left;
+  Width: 150px;
+}
+
+main ul {
+  float: left;
 }
