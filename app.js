@@ -1,37 +1,76 @@
 'use strict';
 
 //store one
-var firstandpike = {
+
+
+var firstAndPike = {
   Location: '1standPike',
   MinCust: 23,
   MaxCust: 65,
   AvgCookieSale: 6.3,
   Hoursales: [],
-};
-//store one math for customers per hour
-firstandpike.calculatecustomersperonehour = function() {
-  var customers = Math.floor(Math.random() * (this.MaxCust - this.MinCust)) + this.MinCust;
+  Total: 0,
 
-  return customers;
-};
-//store one cookies sold in one hour function
-firstandpike.calculatecookiessoldinonehour = function(){
-  //multiply amount of customers by average amount of cookies
-  var customersinanhour = this.AvgCookieSale * customersinanhour;
-  var cookies = this.AvgCookieSale * customersinanhour;
-  return Math.ceil(cookies);
-};
-//for loop for total
-firstandpike.calculatetotalsperhour = function(){
-  var total = 0;
-  for (var i = 0; i < 15; i++){
-    var totalinonehour = this.calculatecookiessoldinonehour();
-    this.totalsperhour.push(totalinonehour);
-    total += totalinonehour;
+  //store one math for customers per hour
+  calculateCustomersPerOneHour: function() {
+    var customers = Math.floor(Math.random() * (this.MaxCust - this.MinCust)) + this.MinCust;
+    console.log(customers);
+    return customers;
+  },
+  //store one cookies sold in one hour function
+  calculateCookiesSoldInOneHour: function(){
+    //multiply amount of customers by average amount of cookies
+    var customersInAnHour = this.AvgCookieSale * this.calculateCustomersPerOneHour();
+    return Math.ceil(customersInAnHour);
+  },
+  //for loop for total
+  calculateTotalsPerHour: function(){
+    for (var i = 0; i < 15; i++){
+      var totalInOneHour = this.calculateCookiesSoldInOneHour();
+      this.Hoursales.push(totalInOneHour);
+      this.total += totalInOneHour;
+
+    }
+    this.total - this.total;
+    console.log(this.totalsperhour);
+  },
+  //Putting the list on the page
+  renderList: function(){
+    var firstandpikeUlEl = document.getElementById('list-container');
+    var firstandpikeLiEl = document.createElement('li');
+    var ulEl = document.createElement('ul');
+
+    for (var j = 0; j < this.Hoursales.length; j++ );
+    var hourLiEl = document.createElement('li');
+    var hour = '' + 6 + '00 ';
+    hour = hour.padStart(5, '0');
+    hourLiEl.textContent = '' + hour + this.Hoursales[0] + ' cookies';
+    console.log('' + hour + this.Hoursales[0] + ' cookies');
+    hourLiEl.textContent = 'hi';
+    ulEl.appendChild(hourLiEl);
+
+
+    var totalLiEl = document.createElement('li');
+    totalLiEl.textContent = 'total : ' + this.total;
+    ulEl.appendChild(totalLiEl);
+
+    firstandpikeLiEl.appendChild(ulEl);
+
+    firstandpikeUlEl.appendChild(firstandpikeLiEl);
   }
-  this.total - total;
-  console.log(this.totalsperhour);
 };
+firstAndPike.calculateCustomersPerOneHour();
+
+// var firstandpikeUlEl = document.getElementById('list-container');
+// var firstandpikeLiEl = document.createElement('li');
+// firstandpikeLiEl.textContent = 'Anything';
+// firstandpikeUlEl.appendChild(firstandpikeLiEl);
+
+
+
+
+
+
 
 //store two
 var seatacairport = {
