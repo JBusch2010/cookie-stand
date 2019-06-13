@@ -1,0 +1,46 @@
+header {
+  background-color: lightyellow;
+  height: 120px;
+}
+
+img {
+  align-content: center;
+}
+
+header li {
+  float: left;
+  Width: 150px;
+  white-space: nowrap;
+  color: salmon;
+}
+li {
+  text-align: center;
+  list-style: none;
+  font-size: 2em;
+}
+
+ul table {
+  margin: 100px;
+}
+
+th {
+  border: 2px solid black;
+  background-color: salmon;
+  
+}
+
+td {
+  border: 2px solid black;
+  background-color: aquamarine;
+  white-space: nowrap;
+  box-align: 
+}
+
+h1 {
+  color: aquamarine;
+  background-color: salmon;
+  height: 100px;
+}
+section {
+  background-color: aqua;
+}
