@@ -82,6 +82,7 @@ function genTableCookies(storeObjArray){
   trEle.appendChild(thEle);
   for(var i = 0; i < 15; i++) {
     strBuilder = '';
+    //if statements for am/pm
     hour = i + 6;
     if (
       hour <= 12)
