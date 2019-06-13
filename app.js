@@ -1,5 +1,4 @@
 'use strict';
-
 var CookieShop = function(Location, MinCust, MaxCust, AvgCookieSale, Hoursales, Total){
   this.Location = Location;
   this.MinCust = MinCust;
