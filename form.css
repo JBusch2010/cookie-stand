@@ -1,12 +1,14 @@
 header {
   background-color: lightyellow;
   height: 120px;
-  margin-left: -300px;
+}
+
+body {
+  background-image: url(family.jpg);
 }
 
 img {
   align-content: center;
-  margin-left: -300;
 }
 
 header li {
@@ -19,31 +21,20 @@ li {
   text-align: center;
   list-style: none;
   font-size: 2em;
-  margin-left: 375px;
+  margin-left: 150px;
 }
 
 h1 {
-  color: aqua;
+  color: aquamarine;
   background-color: salmon;
   height: 100px;
-  margin-top: 0px;
-  margin-right: -100;
 }
 section {
   background-color: aqua;
-  margin-top: 0px;
-  margin-left: -400px;
+  margin-left: 20px;
 }
 
 ul > li {
   list-style-image: url(./liststyleimage-fish.png);
   margin-right: 20px;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  padding: 0%;
-  margin: 0%;
-  background-color: lightyellow;
 }

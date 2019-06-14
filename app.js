@@ -19,6 +19,9 @@ CookieShop.prototype.genCustomersEachHour = function(){
 CookieShop.prototype.genCookiesPerHour = function(){
   for(var i = 0; i < 15; i++){
     this.Hoursales.push(Math.ceil(this.customersEachHour[i] * this.AvgCookieSale));
+    this.Total += this.Hoursales[i];
+    if (i === 14)
+      this.Hoursales.push(this.Total);
   }
 };
 function genListsCookies(storeObj){
@@ -83,6 +86,7 @@ function genTableCookies(storeObjArray){
   for(var i = 0; i < 15; i++) {
     strBuilder = '';
     //if statements for am/pm
+    //also added statements for total
     hour = i + 6;
     if (
       hour <= 12)
@@ -93,12 +97,23 @@ function genTableCookies(storeObjArray){
     if (
       hour >= 13)
       hour -= 12;
+    if ( i === storeObjArray[0].Hoursales.length-1){
+      strBuilder = 'Total';
+    }
+    else {
+      strBuilder = hour + ':00' + period;
+    }
 
     strBuilder = hour + ':00' + period;
     thEle = document.createElement('th');
     thEle.textContent = strBuilder;
     trEle.appendChild(thEle);
   }
+  strBuilder = ( i === storeObjArray[0].Hoursales.length-1);
+  thEle = document.createElement('th');
+  thEle.textContent = 'Total Cookies';
+  trEle.appendChild(thEle);
+
   // Add table data
   for(var z = 0; z < storeObjArray.length; z++) {
     trEle = document.createElement('tr');
