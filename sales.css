@@ -1,0 +1,67 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  background-image: url("fish.jpg")
+}
+
+header {
+  background-color: lightyellow;
+  height: 120px;
+}
+
+header li {
+  float: left;
+  Width: 150px;
+  white-space: nowrap;
+  color: salmon;
+}
+li {
+  text-align: center;
+  list-style: none;
+  font-size: 2em;
+  margin-left: 150px;
+}
+
+ul table {
+  margin: 100px;
+}
+
+th {
+  border: 1px solid black;
+  background-color: salmon;
+}
+
+td {
+  border: 2px solid black;
+  background-color: aquamarine;
+}
+
+ul > li {
+  list-style-image: url(./liststyleimage-fish.png);
+  margin-right: 20px;
+}
+
+table {
+  float: left;
+}
+
+h1 {
+  color: aqua;
+  background-color: salmon;
+  height: 100px;
+  margin-top: 0px;
+  text-align: center;
+}
+h2 {
+  color: aqua;
+  background-color: salmon;
+  height: 100px;
+  margin-top: 0px;
+  text-align: center;
+}
