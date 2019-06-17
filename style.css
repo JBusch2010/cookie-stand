@@ -1,5 +1,4 @@
 header {
-  background-color: lightyellow;
   height: 120px;
   margin-left: -300px;
 }
@@ -13,7 +12,6 @@ header li {
   float: left;
   Width: 150px;
   white-space: nowrap;
-  color: salmon;
 }
 li {
   text-align: center;
@@ -26,8 +24,7 @@ h1 {
   color: aqua;
   background-color: salmon;
   height: 100px;
-  margin-top: 0px;
-  margin-right: -100;
+  text-align: center;
 }
 section {
   background-color: aqua;
