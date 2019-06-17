@@ -38,3 +38,7 @@ ul > li {
   list-style-image: url(./liststyleimage-fish.png);
   margin-right: 20px;
 }
+
+main{
+  margin-left: -170px;
+}
